@@ -27,7 +27,7 @@ training2 <- training2[,-c(1,3,4,5,6)]
 #levels(testing$user_name) <- 1:length(levels(testing$user_name))
 
 #Get numeric columns for data
-numerics <- sapply(training2, is.numeric)
+#numerics <- sapply(training2, is.numeric)
 
 # Split training into sub-training
 inTrain= createDataPartition(y=training2$classe,p=0.75,list=FALSE)
